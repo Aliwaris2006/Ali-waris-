@@ -1,0 +1,46 @@
+import { Match } from './types'
+
+export const matches: Match[] = [
+  {
+    id: 'm1',
+    team1: 'India',
+    team2: 'Australia',
+    status: 'upcoming',
+    date: '2026-10-18',
+    time: '14:00 IST',
+    tournament: 'World Cup 2026',
+  },
+  {
+    id: 'm2',
+    team1: 'England',
+    team2: 'Pakistan',
+    status: 'upcoming',
+    date: '2026-10-19',
+    time: '10:00 GMT',
+    tournament: 'World Cup 2026',
+  },
+  {
+    id: 'm3',
+    team1: 'South Africa',
+    team2: 'New Zealand',
+    status: 'completed',
+    date: '2026-10-14',
+    time: '13:00 SAST',
+    tournament: 'World Cup 2026',
+    score1: '287/6 (50)',
+    score2: '241/10 (47.3)',
+    result: 'South Africa won by 46 runs',
+  },
+  {
+    id: 'm4',
+    team1: 'Sri Lanka',
+    team2: 'West Indies',
+    status: 'completed',
+    date: '2026-10-13',
+    time: '14:30 IST',
+    tournament: 'World Cup 2026',
+    score1: '198/10 (48.2)',
+    score2: '199/4 (42.1)',
+    result: 'West Indies won by 6 wickets',
+  },
+]

@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-white text-cricket-black font-sans antialiased; }
+  * { -webkit-tap-highlight-color: transparent; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-cricket-red text-white font-bold uppercase tracking-wide px-6 py-3 rounded-lg transition-all hover:bg-cricket-red-dark active:scale-95 disabled:opacity-50;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 bg-cricket-black text-white font-bold uppercase tracking-wide px-6 py-3 rounded-lg transition-all hover:bg-cricket-charcoal active:scale-95;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 border-2 border-cricket-black text-cricket-black font-bold uppercase tracking-wide px-6 py-3 rounded-lg transition-all hover:bg-cricket-black hover:text-white active:scale-95;
+  }
+  .section-label {
+    @apply text-xs font-bold uppercase tracking-[0.2em] text-cricket-red;
+  }
+  .section-heading {
+    @apply text-3xl md:text-4xl lg:text-5xl font-black uppercase text-cricket-black leading-tight;
+  }
+  .container-x {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .product-visual {
+    @apply relative w-full h-full flex items-center justify-center overflow-hidden;
+  }
+  .input-field {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cricket-red focus:border-transparent transition-all;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #ccc; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #999; }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

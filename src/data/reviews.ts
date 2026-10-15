@@ -1,0 +1,58 @@
+import { Review } from './types'
+
+export const reviews: Review[] = [
+  {
+    id: 'r1',
+    name: 'Rahul Sharma',
+    rating: 5,
+    text: 'The MRF World Cup Edition Kit exceeded my expectations. The bat has an incredible ping and the protective gear is top quality. Worth every penny.',
+    product: 'MRF World Cup Edition Cricket Kit',
+    verified: true,
+    date: '2026-10-12',
+  },
+  {
+    id: 'r2',
+    name: 'James Anderson',
+    rating: 5,
+    text: 'Outstanding quality and fast delivery. The English willow bat is perfectly balanced and ready to use. Highly recommend Cricket Pro!',
+    product: 'Professional English Willow Cricket Bat',
+    verified: true,
+    date: '2026-10-10',
+  },
+  {
+    id: 'r3',
+    name: 'Priya Patel',
+    rating: 4,
+    text: 'Great batting gloves with excellent protection. The leather palm provides a superb grip. Slightly stiff initially but breaks in nicely.',
+    product: 'Premium Batting Gloves',
+    verified: true,
+    date: '2026-10-08',
+  },
+  {
+    id: 'r4',
+    name: 'David Warner',
+    rating: 5,
+    text: 'The helmet is lightweight and comfortable. The titanium grille gives me confidence facing fast bowling. Excellent fit and finish.',
+    product: 'Lightweight Cricket Helmet',
+    verified: true,
+    date: '2026-10-06',
+  },
+  {
+    id: 'r5',
+    name: 'Sneha Reddy',
+    rating: 4,
+    text: 'The kit bag is spacious and well-designed. Fits all my gear with room to spare. The ventilated shoe pocket is a great feature.',
+    product: 'Professional Cricket Kit Bag',
+    verified: true,
+    date: '2026-10-04',
+  },
+  {
+    id: 'r6',
+    name: 'Michael Clarke',
+    rating: 5,
+    text: 'Premium leather ball with excellent seam position. Maintains shape well even after extended use. Great value for the price.',
+    product: 'Premium Leather Cricket Ball',
+    verified: false,
+    date: '2026-10-02',
+  },
+]
